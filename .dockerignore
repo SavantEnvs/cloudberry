@@ -1,0 +1,9 @@
+# .dockerignore for the commit-image build: the FULL repo incl. .git, minus local build output.
+mayhem/build-*/
+/fuzz_*
+*.o
+*.a
+*.so
+.DS_Store
+*.swp
+/afl_*

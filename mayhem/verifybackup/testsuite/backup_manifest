@@ -1,0 +1,10 @@
+{ "PostgreSQL-Backup-Manifest-Version": 1,
+"Files": [
+{ "Path": "backup_label", "Size": 225, "Last-Modified": "2021-01-01 00:00:00 GMT", "Checksum-Algorithm": "CRC32C", "Checksum": "a4a3b5f2" },
+{ "Path": "global/pg_control", "Size": 8192, "Last-Modified": "2021-01-01 00:00:00 GMT", "Checksum-Algorithm": "SHA256", "Checksum": "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff" },
+{ "Encoded-Path": "706f7374677265", "Size": 0, "Last-Modified": "2021-01-01 00:00:00 GMT" }
+],
+"WAL-Ranges": [
+{ "Timeline": 1, "Start-LSN": "0/2000028", "End-LSN": "0/2000100" }
+],
+"Manifest-Checksum": "8d4c4e1f8f6d8d2f1d5cbbbbf1fa2d4e0a4cfb2b6f1f0ee8e0f1c6d3b36e6a41"}

@@ -1,0 +1,9 @@
+project: savantenvs/cloudberry
+target: libpq-protocol
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libpq-protocol/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_libpq_protocol
+    libfuzzer: true
+    timeout: 5

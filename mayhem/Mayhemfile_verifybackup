@@ -1,0 +1,9 @@
+project: savantenvs/cloudberry
+target: verifybackup
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/verifybackup/testsuite
+cmds:
+  - cmd: /mayhem/afl_pg_verifybackup -n -q -m @@ nonexistent-backup
+    afl: true
+    timeout: 5

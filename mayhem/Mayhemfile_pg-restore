@@ -1,0 +1,9 @@
+project: savantenvs/cloudberry
+target: pg-restore
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pg-restore/testsuite
+cmds:
+  - cmd: /mayhem/afl_pg_restore -f /dev/null @@
+    afl: true
+    timeout: 5

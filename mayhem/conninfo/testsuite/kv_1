@@ -1,0 +1,1 @@
+host=localhost port=5432 dbname=mydb user=me password='a b\'c' sslmode=require

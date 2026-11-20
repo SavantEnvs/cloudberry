@@ -1,0 +1,9 @@
+project: savantenvs/cloudberry
+target: common-decoders
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/common-decoders/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_common_decoders
+    libfuzzer: true
+    timeout: 5

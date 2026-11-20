@@ -1,0 +1,9 @@
+project: savantenvs/cloudberry
+target: pgbench
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pgbench/testsuite
+cmds:
+  - cmd: /mayhem/afl_pgbench -U fuzz -n -t 1 -h /nonexistent -f @@
+    afl: true
+    timeout: 5

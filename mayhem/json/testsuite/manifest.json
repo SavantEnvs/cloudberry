@@ -1,0 +1,1 @@
+{"PostgreSQL-Backup-Manifest-Version": 1, "Files": [{"Path": "a\u00e9", "Size": 3, "Last-Modified": "2020-01-01 00:00:00 GMT", "Checksum-Algorithm": "CRC32C", "Checksum": "deadbeef"}], "WAL-Ranges": [{"Timeline": 1, "Start-LSN": "0/2000028", "End-LSN": "0/2000100"}], "Manifest-Checksum": "00"}
